@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Caesar Cipher Table</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS\styles.css">
+
+
+</head>
+<body>
+
+  <div class="box">
+    <div>
+
+
+    <div class="toggleAudio" >
+      <span><i class="fa fa-volume-up fa-2x" style="color:rgb(255, 248, 248);opacity:.5"></i></span>
+      </div>
+      <audio hidden id="audioPlayer" loop>
+        <source src="Aircraft.mp3" type="audio/mpeg">
+      </audio>
+    
+
+    
+  <h1>Caesar Cipher </h1>
+  <input  id="shiftInput" type="number" min="1" max="25" value="5">
+      <button class="ui-btn"  onclick="generateCaesarTable()" style="margin-left: 10px;">
+      <span>
+        Generate Table
+      </span>
+    </button>
+
+  <hr>
+  <p id="lives">Lives: <span id="lives-value">5</span> ❤️</p>
+  <div class="caesar-table-container">
+    <h2>Offset: <span id="offset-value"> 0</span></h2>
+    <table class="caesar-table" id="caesar-table">
+      <thead>
+        <tr>
+
+          <th class="caesar-header-cell"></th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr >
+          <td class="caesar-header-cell"  ></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h1>Decode</h1>
+  <h2 class="result2" style="display: inline-block;"></h2>
+
+  <div id="newtask">
+
+  <input   id="monitorInput" class="monitor " type="text" placeholder="  กรอกคำตอบ  "></input>
+  <button class="ui-btn" onclick="displayDecodedResult()">
+    <span>
+      ShowDecodedResult
+    </span>
+  </button>
+  </div>
+
+
+
+<hr>
+
+
+<div class="output">
+<div class="output1">
+  <div><p>ข้อความที่ดักจับได้</p>
+    <p>หัวหน้าพรรคกรรมกรชาติสังคมนิยมเยอรมันหรือที่รู้จักกันทั่วไปในชื่อ พรรคนาซี  <br> (The Unknown F12 X Quit out toDay.)</p>
+    <div id="result1"></div>
+  </div> 
+</div> 
+
+  <div class="output2">
+  <div><p>ผลลัพธ์ทีถอดรหัสได้</p>
+    <div id="tasks"></div>
+    
+  </div>
+</div>
+  </div> 
+</div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="Script/result1.js"></script>
+
+
+</body>
+</html>
+
